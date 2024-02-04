@@ -149,17 +149,7 @@ box2.position.set(0,15,10)
 // box2.material.map=textureLoader.load(img)
 sence.add(box2)
 
-let step = 0
 
-const mousePosition = new THREE.Vector2();
-window.addEventListener('mousemove',(e)=>{
-    mousePosition.x = (e.clientX / window.innerWidth)*2 - 1
-    mousePosition.y = 1 - (e.clientY / window.innerHeight)*2
-
-})
-const rayCaster = new THREE.Raycaster()
-const sphereId = sphere.id
-box2.name = 'box2'
 
 
 const plane2Geometry = new THREE.PlaneGeometry(10,10,10,10)
@@ -197,6 +187,19 @@ assetsLoader.load(demo.href,(gltf)=>{
 })
 
 const lastPointZ = plane2.geometry.attributes.position.array.length - 1
+
+
+let step = 0
+
+const mousePosition = new THREE.Vector2();
+window.addEventListener('mousemove',(e)=>{
+    mousePosition.x = (e.clientX / window.innerWidth)*2 - 1
+    mousePosition.y = 1 - (e.clientY / window.innerHeight)*2
+
+})
+const rayCaster = new THREE.Raycaster()
+const sphereId = sphere.id
+box2.name = 'box2'
 
 const animate = (time) => {
     box.rotation.x =time/1000

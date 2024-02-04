@@ -14,11 +14,31 @@ const routes = [
         path: '/second',
         name: 'second',
         meta: {
-        title: '首页',
+        title: 'second',
         keepAlive: false,
         requireAuth: true
         },
         component: () => import('@/pages/second.vue')
+    },
+    {
+        path: '/shader',
+        name: 'shader',
+        meta: {
+        title: 'shader',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/shader.vue')
+    },
+    {
+        path: '/cannon',
+        name: 'cannon',
+        meta: {
+        title: 'cannon',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/cannon-demo.vue')
     },
 ]
 
