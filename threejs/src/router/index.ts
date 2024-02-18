@@ -40,6 +40,26 @@ const routes = [
         },
         component: () => import('@/pages/cannon-demo.vue')
     },
+    {
+        path: '/threeclick',
+        name: 'threeclick',
+        meta: {
+        title: 'threeclick',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/threejs-click.vue')
+    },
+    {
+        path: '/3jscannonjsclick',
+        name: '3jscannonjsclick',
+        meta: {
+        title: '3js-cannonjs-click',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/3js-cannonjs-click.vue')
+    },
 ]
 
 const router = createRouter({
