@@ -21,6 +21,16 @@ const routes = [
         component: () => import('@/pages/second.vue')
     },
     {
+        path: '/load3dAnimateModel',
+        name: 'load3dAnimateModel',
+        meta: {
+        title: 'load 3d Animation Model',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/load3dAnimateModel.vue')
+    },
+    {
         path: '/shader',
         name: 'shader',
         meta: {
@@ -59,6 +69,16 @@ const routes = [
         requireAuth: true
         },
         component: () => import('@/pages/3js-cannonjs-click.vue')
+    },
+    {
+        path: '/SubdivideAPlane',
+        name: 'Subdivide A Plane Into Even Squares',
+        meta: {
+        title: 'Subdivide A Plane Into Even Squares',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/subdividePlane.vue')
     },
 ]
 
