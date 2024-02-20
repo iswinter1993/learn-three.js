@@ -80,6 +80,16 @@ const routes = [
         },
         component: () => import('@/pages/subdividePlane.vue')
     },
+    {
+        path: '/load3DModelFindTheMaterials',
+        name: 'How To Find The Materials Of A Loaded Model',
+        meta: {
+        title: 'How To Find The Materials Of A Loaded Model',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/load3DModelFindTheMaterials.vue')
+    },
 ]
 
 const router = createRouter({
