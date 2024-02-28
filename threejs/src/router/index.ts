@@ -90,6 +90,16 @@ const routes = [
         },
         component: () => import('@/pages/load3DModelFindTheMaterials.vue')
     },
+    {
+        path: '/clickAdd3DAnimationModel',
+        name: 'Cloning And Animating Models Loaded From glTF Files',
+        meta: {
+        title: 'Cloning And Animating Models Loaded From glTF Files',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/clickAdd3DAnimationModel.vue')
+    },
 ]
 
 const router = createRouter({
