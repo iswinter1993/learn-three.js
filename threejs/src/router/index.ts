@@ -100,6 +100,16 @@ const routes = [
         },
         component: () => import('@/pages/clickAdd3DAnimationModel.vue')
     },
+    {
+        path: '/createRealisticScenes',
+        name: 'Create Realistic Scenes',
+        meta: {
+        title: 'Create Realistic Scenes',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/createRealisticScenes.vue')
+    },
 ]
 
 const router = createRouter({
