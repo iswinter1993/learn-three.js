@@ -110,6 +110,16 @@ const routes = [
         },
         component: () => import('@/pages/createRealisticScenes.vue')
     },
+    {
+        path: '/ImportModelFromSketchfab',
+        name: 'Import Model From Sketchfab.com',
+        meta: {
+        title: 'Import Model From Sketchfab.com',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/ImportModelFromSketchfab.vue')
+    },
 ]
 
 const router = createRouter({
