@@ -19,8 +19,22 @@ renderer.outputColorSpace = THREE.SRGBColorSpace
 renderer.toneMapping = THREE.ACESFilmicToneMapping
 renderer.toneMappingExposure = 1.8
 
-const rgbeLoader = new RGBELoader()
-const gltfLoader = new GLTFLoader()
+const loadingManager = new THREE.LoadingManager()
+loadingManager.onStart = (url,loaded,total) => {
+    console.log('Start loading...',url)
+}
+loadingManager.onProgress = (url,loaded,total) => {
+    //total 是rgbeLoader和gltfLoader 资源的总和
+    console.log('propress...',loaded / total)
+}
+// loadingManager.onLoad=()=>{
+//     console.log('Just finish load')
+// }
+// loadingManager.onError = (url) =>{
+//     console.log('Error loading...',url)
+// }
+const rgbeLoader = new RGBELoader(loadingManager)
+const gltfLoader = new GLTFLoader(loadingManager)
 let car:any;
 rgbeLoader.load('/MR_INT-001_NaturalStudio_NAD.hdr',(texture)=>{
     texture.mapping = THREE.EquirectangularReflectionMapping
