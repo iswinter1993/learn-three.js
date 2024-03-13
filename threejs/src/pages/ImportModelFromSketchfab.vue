@@ -27,9 +27,9 @@ loadingManager.onProgress = (url,loaded,total) => {
     //total 是rgbeLoader和gltfLoader 资源的总和
     console.log('propress...',loaded / total)
 }
-// loadingManager.onLoad=()=>{
-//     console.log('Just finish load')
-// }
+loadingManager.onLoad=()=>{
+    console.log('Just finish load')
+}
 // loadingManager.onError = (url) =>{
 //     console.log('Error loading...',url)
 // }
