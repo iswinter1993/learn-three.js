@@ -120,6 +120,26 @@ const routes = [
         },
         component: () => import('@/pages/ImportModelFromSketchfab.vue')
     },
+    {
+        path: '/camareMove',
+        name: 'Camera Movement In Three.js Using GSAP',
+        meta: {
+        title: 'Camera Movement In Three.js Using GSAP',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/camareMove.vue')
+    },
+    {
+        path: '/changeViewport',
+        name: 'Create An Immersive Experience With Three.js And GSAP',
+        meta: {
+        title: 'Create An Immersive Experience With Three.js And GSAP',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/changeViewport.vue')
+    },
 ]
 
 const router = createRouter({

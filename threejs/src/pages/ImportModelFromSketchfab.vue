@@ -7,6 +7,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { RGBELoader } from 'three-stdlib';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import gsap from 'gsap'
 const renderer = new THREE.WebGLRenderer()
 renderer.setSize(window.innerWidth,window.innerHeight)
 const scene = new THREE.Scene()
@@ -59,8 +60,38 @@ ground.rotateX(- Math.PI / 2)
 const gridHelper = new THREE.GridHelper(30,30)
 scene.add(gridHelper)
 
+//动画时间线
+const timeLine = gsap.timeline()
+window.addEventListener('mousedown',()=>{
+    timeLine.to(camare.position,{
+        z:20,
+        duration:1,
+        onUpdate:()=>{//保持相机朝向
+            camare.lookAt(0,0,0)
+        }
+    })
+    .to(camare.position,{
+        y:20,
+        duration:1,
+        onUpdate:()=>{//保持相机朝向
+            camare.lookAt(0,0,0)
+        }
+    })
+    .to(camare.position,{
+        x:10,
+        y:5,
+        z:3,
+        duration:1,
+        onUpdate:()=>{//保持相机朝向
+            camare.lookAt(0,0,0)
+        }
+    })
+})
+
+
 const animate = (time:any) => {
     if(car) car.rotation.y =  - time / 3000
+   
     renderer.render(scene,camare)
 }
 renderer.setAnimationLoop(animate)
