@@ -78,6 +78,11 @@
   "resolved" "https://registry.npmjs.org/@types/webxr/-/webxr-0.5.13.tgz"
   "version" "0.5.13"
 
+"@types/yuka@^0.7.4":
+  "integrity" "sha512-nyfp47Re8wtzG0DdBPQ6PepXOU0CiMpPVWZ21y1mRImbnz53ADdHUbDY2GRNbIdsl7qlV3XWS+gVpj3zoIIPXA=="
+  "resolved" "https://registry.npmjs.org/@types/yuka/-/yuka-0.7.4.tgz"
+  "version" "0.7.4"
+
 "@vitejs/plugin-vue@^4.5.2":
   "integrity" "sha512-kqf7SGFoG+80aZG6Pf+gsZIVvGSCKE98JbiWqcCV9cThtg91Jav0yvYFC9Zb+jKetNGF6ZKeoaxgZfND21fWKw=="
   "resolved" "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-4.6.2.tgz"
@@ -995,3 +1000,8 @@
   "integrity" "sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A=="
   "resolved" "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz"
   "version" "4.0.0"
+
+"yuka@^0.7.8":
+  "integrity" "sha512-G/pFcMZh2Azz7Yy500NSV1jQ0Ru7h9hTNyEW+HjRXcdzjJIyp/3mCGspnx7VJVP06zxORqK6mkl5TywLqVUnVg=="
+  "resolved" "https://registry.npmjs.org/yuka/-/yuka-0.7.8.tgz"
+  "version" "0.7.8"

@@ -20,11 +20,13 @@
     "pinia": "^2.1.7",
     "three": "^0.160.0",
     "vue": "^3.3.11",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "yuka": "^0.7.8"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
     "@types/three": "^0.160.0",
+    "@types/yuka": "^0.7.4",
     "@vitejs/plugin-vue": "^4.5.2",
     "less": "^4.2.0",
     "sass": "^1.69.7",

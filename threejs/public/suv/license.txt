@@ -1,0 +1,11 @@
+Model Information:
+* title:	Suv
+* source:	https://sketchfab.com/3d-models/suv-128d94088b7b45e8b6b64b56a6c96f77
+* author:	1-3D.com (https://sketchfab.com/1-3D.com)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Suv" (https://sketchfab.com/3d-models/suv-128d94088b7b45e8b6b64b56a6c96f77) by 1-3D.com (https://sketchfab.com/1-3D.com) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
