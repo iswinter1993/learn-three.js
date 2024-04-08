@@ -14,7 +14,7 @@ const camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeig
 const controls = new OrbitControls(camera,renderer.domElement)
 camera.position.set(-1.7, 0, 8.7);
 controls.update()
-camera.lookAt(1.7, 0, 8.7);
+camera.lookAt(scene.position);
 const ambientLight = new THREE.AmbientLight(0xffffff,10)
 scene.add(ambientLight)
 const gltfLoader = new GLTFLoader()

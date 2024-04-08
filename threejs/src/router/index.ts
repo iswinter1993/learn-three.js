@@ -160,6 +160,26 @@ const routes = [
         },
         component: () => import('@/pages/createASelfDrivingCarUsing3js&Yuka.vue')
     },
+    {
+        path: '/SeekSteeringBehaviorWithYuka',
+        name: 'Seek Steering Behavior With Yuka',
+        meta: {
+        title: 'Seek Steering Behavior With Yuka',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/SeekSteeringBehaviorWithYuka.vue')
+    },
+    {
+        path: '/ArriveSteeringBehavior',
+        name: 'Arrive Steering Behavior With Yuka',
+        meta: {
+        title: 'Arrive Steering Behavior With Yuka',
+        keepAlive: false,
+        requireAuth: true
+        },
+        component: () => import('@/pages/ArriveSteeringBehavior.vue')
+    },
 ]
 
 const router = createRouter({
